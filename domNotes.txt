@@ -107,3 +107,13 @@ e.g:
     h2.outerHTML = "<h4> ABDUL RAHMAN </h4>"; //to set new value to the outer html tags using outerhtml
     console.log(h2.outerHTML);
    
+6)   Style: 
+    
+    to style css elements using dom.
+
+    let h6 = document.getElementById("h6");
+    h6.style.color = "red";
+    h6.style.fontSize = "12px";
+    h6.style.padding = "20px" 
+
+7)    
