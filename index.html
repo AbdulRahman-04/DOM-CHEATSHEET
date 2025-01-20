@@ -17,7 +17,23 @@
       <h3>THIS IS </h3>
       <h3> HEADING 3</h3>
 
+
+     <!-- QuerySelector -->
+    <p class="box">HEY</p>
+    <p class="box">HEY</p>
+    <p class="box">HEY</p>
+
+    <div id="id">h1</div>
+    <div id="id">h2</div>
+    <div id="id">h3</div>
+
+    <!-- innerHTML and outerHTML -->
     
+    <!-- inner html -->
+    <h1 id="h1">HEY THIS IS H1</h1>
+
+     <!-- outerhtml -->
+     <h2 id="h2">THIS IS H2</h2>
 
  <script>
    
@@ -49,8 +65,59 @@
     // for(let k of h3){
     //     console.log(k);   
     // }
+
+
+    // 4.  Query selector: 
+    //  a query selector just selects one element. it is used to select a specifc tag with specific class or id name
+    
+    let pbox = document.querySelector("p.box");
+    console.log(pbox);
+    
+
+    // query selector all selects all elements of given id or class of specific html elements
+    let pboxAll = document.querySelectorAll("p.box");
+    console.log(pboxAll);
+    // for(let m = 0; m<=pboxAll.length-1; m++){
+    //     console.log(pboxAll[m]);
+    // }
+    for(let m of pboxAll){
+        console.log(m);
+        
+    }
+
+    // query selector using id's
+    // let div3 = document.querySelectorAll("div#id");
+    // console.log(div3);
+
+    // for(let n = 0; n <= div3.length-1; n++){
+    //     console.log(div3[n]);
+        
+    // }
+    
+    //  5. innerHTML and outerHTML
+
+    // innerHTML
+
+    let h1 = document.getElementById("h1");
+    console.log(h1.innerHTML);  // to get current value of html element
+    h1.innerHTML = "Abdul Rahman"; // to set new value to html element
+    console.log(h1.innerHTML);
+
+
+    // outerHTML
+    let h2 = document.getElementById("h2");
+    console.log(h2.outerHTML); // to get all the outer body of html element
+    h2.outerHTML = "<h6> ABDUL RAHMAN </h6>"; //to set new value to the outer html tags using outerhtml
+    console.log(h2.outerHTML);
+    
+
     
     
+    
+    
+    
+   
+
 
 
 
