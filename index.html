@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hatran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  
+
     <!-- classes -->
-     <div class="box">box1</div>
-     <div class="box">box2</div>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
 
 
-     <!-- get element by tag names -->
-      <h3>HEADING 3 </h3>
-      <h3>THIS IS </h3>
-      <h3> HEADING 3</h3>
+    <!-- get element by tag names -->
+    <h3>HEADING 3 </h3>
+    <h3>THIS IS </h3>
+    <h3> HEADING 3</h3>
 
 
-     <!-- QuerySelector -->
+    <!-- QuerySelector -->
     <p class="box">HEY</p>
     <p class="box">HEY</p>
     <p class="box">HEY</p>
@@ -28,113 +36,117 @@
     <div id="id">h3</div>
 
     <!-- innerHTML and outerHTML -->
-    
+
     <!-- inner html -->
     <h1 id="h1">HEY THIS IS H1</h1>
 
-     <!-- outerhtml -->
-     <h2 id="h2">THIS IS H2</h2>
+    <!-- outerhtml -->
+    <h2 id="h2">THIS IS H2</h2>
 
-     <!-- Style -->
-      <h6 id="h6">THIS IS H6 TAG</h6>
+    <!-- Style -->
+    <h6 id="h6">THIS IS H6 TAG</h6>
 
- <script>
-   
-    //  2.  classname dom
-
-       let boxVar = document.getElementsByClassName("box");
-       console.log(boxVar);
-       console.log("hello");
-       
-    //    for(let i = 0; i<= boxVar.length-1; i++){
-    //     console.log(boxVar[i]);
-    //    }
-
-    //    for(let j of boxVar){
-    //     console.log(j);
-        
-    //    }
-       
-
-    // 3. get element by tag name
-    let h3 = document.getElementsByTagName("h3");
-    console.log("h3");
-
-    // for(let k = 0; k<=h3.length-1; k++){
-    //     console.log(h3[k]);
-       
-    // }
-
-    // for(let k of h3){
-    //     console.log(k);   
-    // }
-
-
-    // 4.  Query selector: 
-    //  a query selector just selects one element. it is used to select a specifc tag with specific class or id name
     
-    let pbox = document.querySelector("p.box");
-    console.log(pbox);
-    
+    <script>
 
-    // query selector all selects all elements of given id or class of specific html elements
-    let pboxAll = document.querySelectorAll("p.box");
-    console.log(pboxAll);
-    // for(let m = 0; m<=pboxAll.length-1; m++){
-    //     console.log(pboxAll[m]);
-    // }
-    for(let m of pboxAll){
-        console.log(m);
-        
-    }
+        //  2. classname dom
 
-    // query selector using id's
-    // let div3 = document.querySelectorAll("div#id");
-    // console.log(div3);
+        let boxVar = document.getElementsByClassName("box");
+        console.log(boxVar);
+        console.log("hello");
 
-    // for(let n = 0; n <= div3.length-1; n++){
-    //     console.log(div3[n]);
-        
-    // }
-    
-    //  5. innerHTML and outerHTML
+        //    for(let i = 0; i<= boxVar.length-1; i++){
+        //     console.log(boxVar[i]);
+        //    }
 
-    // innerHTML
+        //    for(let j of boxVar){
+        //     console.log(j);
 
-    let h1 = document.getElementById("h1");
-    console.log(h1.innerHTML);  // to get current value of html element
-    h1.innerHTML = "Abdul Rahman"; // to set new value to html element
-    console.log(h1.innerHTML);
+        //    }
 
 
-    // outerHTML
-    let h2 = document.getElementById("h2");
-    console.log(h2.outerHTML); // to get all the outer body of html element
-    h2.outerHTML = "<h6> ABDUL RAHMAN </h6>"; //to set new value to the outer html tags using outerhtml
-    console.log(h2.outerHTML);
-    
+        // 3. get element by tag name
+        let h3 = document.getElementsByTagName("h3");
+        console.log("h3");
 
-    //  6. Style
-    
-    // to style using css elements.
+        // for(let k = 0; k<=h3.length-1; k++){
+        //     console.log(h3[k]);
 
-    let h6 = document.getElementById("h6");
-    h6.style.color = "red";
-    h6.style.fontSize = "12px";
-    h6.style.padding = "20px" 
+        // }
 
-   // 7.    
-    
-    
-    
-    
-   
+        // for(let k of h3){
+        //     console.log(k);   
+        // }
 
 
+        // 4. Query selector: 
+        //  a query selector just selects one element. it is used to select a specifc tag with specific class or id name
+
+        let pbox = document.querySelector("p.box");
+        console.log(pbox);
+
+
+        // query selector all selects all elements of given id or class of specific html elements
+        let pboxAll = document.querySelectorAll("p.box");
+        console.log(pboxAll);
+        // for(let m = 0; m<=pboxAll.length-1; m++){
+        //     console.log(pboxAll[m]);
+        // }
+        for (let m of pboxAll) {
+            console.log(m);
+
+        }
+
+        // query selector using id's
+        // let div3 = document.querySelectorAll("div#id");
+        // console.log(div3);
+
+        // for(let n = 0; n <= div3.length-1; n++){
+        //     console.log(div3[n]);
+
+        // }
+
+        //  5.innerHTML and outerHTML
+
+        // innerHTML
+
+        let h1 = document.getElementById("h1");
+        console.log(h1.innerHTML);  // to get current value of html element
+        h1.innerHTML = "Abdul Rahman"; // to set new value to html element
+        console.log(h1.innerHTML);
+
+
+        // outerHTML
+        let h2 = document.getElementById("h2");
+        console.log(h2.outerHTML); // to get all the outer body of html element
+        h2.outerHTML = "<h6> ABDUL RAHMAN </h6>"; //to set new value to the outer html tags using outerhtml
+        console.log(h2.outerHTML);
+
+
+        //  6.Style
+
+        // to style using css elements.
+
+        let h6 = document.getElementById("h6");
+        h6.style.color = "red";
+        h6.style.fontSize = "12px";
+        h6.style.padding = "20px";
+        h6.style.fontFamily = "Roboto, serif";
+
+
+        //  7. 
 
 
 
 
- </script>
+
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>

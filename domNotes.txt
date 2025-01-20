@@ -114,6 +114,7 @@ e.g:
     let h6 = document.getElementById("h6");
     h6.style.color = "red";
     h6.style.fontSize = "12px";
-    h6.style.padding = "20px" 
+    h6.style.padding = "20px";
+    h6.style.fontFamily = "serif, sans serif, cursive, fantasy, and monospace"
 
 7)    
