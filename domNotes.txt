@@ -1,0 +1,65 @@
+DOM-CHEATSHEET (DOCUMENT OBJECT MODEL): IT IS AN APPLICATION PROGRAMMING INTERFACE(API) FOR MANIPULATING HTML
+DOCUMENTS.
+
+-> TO ADD, REMOVE AND MODIFY PARTS OF DOCUMENT HTML.
+
+-> WHEN A WEBPAGE IS LOADED, THE BROWSER CREATES A DOCUMENT OBJECT MODEL OF THE PAGE.
+
+-> NOTE: IN DOCUMENT DOM TREE THE DOCUMENT IS THE ROOT NODE OF OBJECT.
+
+-> WITH THE OBJECT MODEL, JS GETS ALL THE POWER IT NEEDS TO CREATE DYNAMIC HTML.
+
+-> JS CAN CHANGE ALL THE HTML ELEMENTS IN THE PAGE.
+
+-> JS CAN CHANGE ALL THE ATTRIBUTES AND STYLE IN THE PAGE.
+
+-> JS CAN ADD OR REMOVE HTML ELEMENTS.
+
+-> JS CAN CREATE NEW HTML EVENTS IN THE PAGE.
+
+-> NOTE: IN THE DOM, ALL THE HTML ELEMENTS ARE DEFINED AS OBJECTS. SO IT'LL HAVE BOTH PROPERTY AND METHOD.
+
+-> THE DOCUMENT OBJECT REPRESENTS YOUR WEB PAGE.
+
+-> IF YOU WANT TO ACCESS ANY ELEMENT IN THE HTML PAGE, YOU SHOULD ALWAYS START WITH ACCESSING THE DOCUMENT OBJECT.
+
+
+
+(NEXT PAGE IN BOOK)
+
+DOM(PROPERTIES OR TAGS):
+
+1) document.getElementById: this is used to target an element using its id.
+e.g: 
+ <p id="ptag">this is a para</p>
+    
+     let pVar = document.getElementById("ptag");
+     console.log(pVar);
+
+2) document.getElementsByClassName:  this is used to target more than one element using its class name.
+
+    <!-- classes -->
+     <div class="box">box1</div>
+     <div class="box">box2</div>
+
+     js code:  
+        let boxVar = document.getElementsByClassName("box");
+       console.log(boxVar);
+       console.log("hello");
+       
+       for(let i = 0; i<= boxVar.length-1; i++){
+        console.log(boxVar[i]);
+       }
+
+3) document.getElementsByTagName:  this is used to tag html elements using tag names
+
+  // 3. get element by tag name
+    let h3 = document.getElementsByTagName("h3");
+    console.log("h3");
+
+    for(let k = 0; k<=h3.length-1; k++){
+        console.log(h3[k]);
+       
+    }
+
+    
