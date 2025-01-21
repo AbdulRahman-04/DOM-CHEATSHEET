@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- classes -->
+     <div class="box">hello</div>
+
+     <!-- Set attribute -->
+      <div id="rahman">Hey, i'm rahman</div>
+
+      <div id="div1"></div>
+
+     
+
+    <script>
+        // 8. classList add, classList Remove, classList replace
+
+        let box = document.querySelector(".box");
+        
+        box.classList.add("box1");
+        box.classList.remove("box");
+        box.classList.replace("box1", "rahman");
+
+        // 9. SetAttribute
+        let rahmanId = document.getElementById("rahman");
+        
+        rahmanId.setAttribute("class", "myClass");
+
+        // div attributes
+        let div1 = document.getElementById("div1");
+          
+        // class add
+        div1.setAttribute("class", "myDiv");
+       
+        // styling
+        div1.style.backgroundColor = "red";
+        div1.style.height = "100px";
+        div1.style.width = "100px";
+        
+        // remove attribute
+        div1.removeAttribute("class");
+        
+        
+        // 10. DOM events: 
+
+
+        
+    </script>
+</body>
+</html>

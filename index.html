@@ -46,7 +46,9 @@
     <!-- Style -->
     <h6 id="h6">THIS IS H6 TAG</h6>
 
-    
+   
+
+
     <script>
 
         //  2. classname dom
@@ -134,9 +136,19 @@
         h6.style.fontFamily = "Roboto, serif";
 
 
-        //  7. 
+
+        //  7. Create Element, create TextNode, Append: 
+        let h4 = document.createElement("h4");  // creates tags
+
+        let h4Content = document.createTextNode("this is h4"); // this is where you write content
+
+        h4.append(h4Content);  //adds the content to the created tag
+
+        console.log(h4); //prints the tag and its inp in console
+        
 
 
+       
 
 
 

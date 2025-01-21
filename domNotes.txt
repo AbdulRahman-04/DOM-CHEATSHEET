@@ -117,4 +117,67 @@ e.g:
     h6.style.padding = "20px";
     h6.style.fontFamily = "serif, sans serif, cursive, fantasy, and monospace"
 
-7)    
+
+ADVANCE TAGS: 
+
+7)      Create Element, create TextNode, Append: 
+        let h4 = document.createElement("h4");  // creates tags
+
+        let h4Content = document.createTextNode("this is h4"); // this is where you write content
+
+        h4.append(h4Content);  //adds the content to the created tag
+
+        console.log(h4); //prints the tag and its inp in console    
+
+
+8)     classList add, classList Remove, classList replace: these are used to add class, remove or replace existing
+                                                           class names.
+
+        let box = document.querySelector(".box");
+        
+        box.classList.add("box1");
+        box.classList.remove("box");
+        box.classList.replace("box1", "rahman");   
+
+9)      SetAttribute: it is used to add new attributes to tags such as name, id, class etc
+        let rahmanId = document.getElementById("rahman");
+        
+        rahmanId.setAttribute("class", "myClass");
+
+        // div attributes
+        let div1 = document.getElementById("div1");
+          
+        // class add
+        div1.setAttribute("class", "myDiv");
+       
+        // styling
+        div1.style.backgroundColor = "red";
+        div1.style.height = "100px";
+        div1.style.width = "100px";     
+
+11)   DOM EVENTS: DOM EVENTS ARE ACTIONS THAT OCCUR AS A RESULT OF THE USER ACTION OR A RESULT OF STATE CHANGE OF
+      THE ELEMENT OF A DOM TREE.
+
+ EXAMPLE: 
+
+ 1. WHEN A MOUSE BUTTON IS CLICKED 
+ 2. WHEN A WEBPAGE IS LOADED
+ 3. WHEN A IMAGE IS LOADED 
+ 4. WHEN MOUSEOVER EVENT AN ELEMENT
+ 5  WHEN AN INPUT FIELD IS CHANGED
+ 6. WHEN A HTML FORM IS SUBMITTED
+ 7. WHEN A USER STROKES A KEY
+
+ THERE ARE TWO TYPES TO REGISTER AN EVENT:
+
+ 1. USING FUNCTION:
+
+
+
+e.g: function submit(){
+    alert("hello, i was clicked");
+} 
+ 
+ 
+ 
+ 2. USING ADDEVENTLISTENER()            

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- DOM EVENTS -->
+
+
+   <!-- <button onclick="btnClick()" id = "btn" class = "btn btn-primary">Submit</button> -->
+
+   <button id="btn2">Submit3</button>
+
+   <button id="date">Time:</button>
+
+
+
+    <script>
+
+        //  THERE ARE TWO TYPES TO REGISTER AN EVENT:
+        
+        // 1. USING FUNCTION: 
+         
+        // function btnClick(){
+        //     alert('this btn is clicked')
+        // }
+
+        // 2. ADDING EVENT LISTENER:
+
+        let getBtn = document.getElementById("btn");
+
+        getBtn.addEventListener('click', function click(){
+            alert('this is clicked')
+        })
+
+
+        // BUTTON EVENTS : 
+        
+        // 1. mouseover and mouseout event
+
+        // let btn2 = document.getElementById("btn2");
+
+        // btn2.addEventListener("mouseover", ()=>{
+        //     alert('mouse hovered')
+            
+        // })
+        
+        
+        btn2.addEventListener("mouseout", function mouseOut(){
+           alert('mouse taken')
+           
+        })
+
+        // fetching date and time : 
+
+        let date = document.getElementById("date");
+        
+        date.addEventListener('click', function date(){
+            date.innerHTML = Date();
+        });
+
+
+        // remove event listener: 
+        
+        date.removeEventListener('click', date());
+       
+        getBtn.removeEventListener('mouseout', click());
+        
+         
+
+        
+    </script>
+</body>
+
+</html>
