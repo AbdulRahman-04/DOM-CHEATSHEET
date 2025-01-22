@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="showLocation()">Get location</button>
+    <p id="location"></p>
+
+    <script>
+        function showLocation() {
+            let geo = navigator.geolocation;
+            console.log('hello');
+            
+            let locationId = document.getElementById("location");
+
+
+            if (geo) {
+                geo.getCurrentPosition(
+                    (position) => {
+                        let lat = position.coords.latitude;
+                        let long = position.coords.longitude;
+                        locationId.innerHTML = `bhai tera location dekh : lats: ${lat} and long: ${long}`;
+                    },
+                    (error) => {
+                        locationId.innerHTML = "Failed to fetch location. please allow location access";
+                    }
+                );
+            } else {
+                locationId.innerHTML = "You blocked the permission or geo location is not supported"
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
