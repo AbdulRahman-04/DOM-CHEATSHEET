@@ -25,7 +25,7 @@
                     (position) => {
                         let lat = position.coords.latitude;
                         let long = position.coords.longitude;
-                        locationId.innerHTML = `bhai tera location dekh : lats: ${lat} and long: ${long}`;
+                        locationId.innerHTML = `https://www.google.com/maps?q=${lat}, ${long}`;
                     },
                     (error) => {
                         locationId.innerHTML = "Failed to fetch location. please allow location access";
