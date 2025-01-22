@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <script>
+
+        let user = {
+            name: "rahman",
+            age: 19,
+            isAlive: true
+        }
+
+        // localStorage .setitem: used to store the items in local storage of browser
+
+        localStorage.setItem("userData", JSON.stringify(user)) //always store the data in local storage in json form
+
+        // localStorage.getitem: used to get the items stored in local storage of browser
+        
+        localStorage.getItem("userData");
+
+        // localStorage.removeitem: used to remove items stored in local storage of browser.
+
+        localStorage.removeItem("userData");
+
+    </script>
+</body>
+</html>
