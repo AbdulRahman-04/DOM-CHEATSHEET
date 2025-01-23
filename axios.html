@@ -20,6 +20,7 @@
 
 
 
+
     <script>
       
       const fetchPostsButtons = document.getElementById("fetchPosts");
@@ -30,7 +31,17 @@
         try {
 
             let response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-            console.log(response);
+            console.log(response.data);
+
+            postList.innerHTML = "";
+
+            let allData = response.data;
+            allData.forEach((x, index)=>{
+                const li = document.createElement("li");
+                li.textContent = `${index+1}. ${x.title}`
+                postList.appendChild(li)
+            });
+
             
             
         } catch (error) {
