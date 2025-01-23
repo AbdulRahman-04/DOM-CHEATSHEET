@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn1">BTN1</button>
+    <button id="btn2">BTN2</button>
+    <button id="btn3">BTN3</button>
+    <script>
+        let getbtn1 = document.getElementById("btn1");
+        let getbtn2 = document.getElementById("btn2");
+        let getbtn3 = document.getElementById("btn3");
+
+        let features = ("height = 600, width= 600");
+        let newWindow;
+
+        getbtn1.addEventListener('click', function google(){
+           newWindow = window.open("https://google.com", "google", features)
+        })
+
+        getbtn2.addEventListener("click", function click(){
+             newWindow.close()
+        })
+
+        getbtn3.addEventListener("click", function open(){
+            window.open("https://youtube.com")
+        })
+    </script>
+</body>
+
+</html>
