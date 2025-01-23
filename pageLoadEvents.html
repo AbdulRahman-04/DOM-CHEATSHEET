@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <img id="image" src="./download.jpeg" alt="">
+
+    <script>
+ 
+   window.addEventListener('DOMContentLoaded', function pageLoad(){
+    alert('page loaded');
+
+    let image = document.getElementById("image");
+
+    image.addEventListener("load", function load(){
+        alert('image loaded')
+    })
+   })
+
+
+
+    </script>
+</body>
+</html>
